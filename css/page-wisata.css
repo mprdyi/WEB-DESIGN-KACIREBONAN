@@ -1,0 +1,271 @@
+.banner-hero {
+    content: "";
+    background:  #f0f4f8;;
+    overflow:hidden;
+    z-index:1;
+    position: relative;
+    padding:170px 100px 70px 100px;
+
+  }
+  
+ /* Container flex di tengah */
+.product-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+/* Kiri: gambar utama & thumbnail */
+.product-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-left .main-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.thumbnail {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.thumbnail img {
+  width: 80px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Kanan: detail info */
+.product-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-right h1 {
+  margin: 0 0 0.5rem;
+}
+
+.rating {
+  margin-bottom: 0.5rem;
+  color: #f39c12;
+}
+
+.price .current {
+  font-size: 1.5rem;
+  color: #27ae60;
+  margin-right: 1rem;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.options {
+  margin: 1rem 0;
+}
+
+.options label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-cart {
+  background: #27ae60;
+  color: #fff;
+}
+
+.buy-now {
+  background: #f39c12;
+  color: #fff;
+}
+
+.product-tabs {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.tabs-header .tab {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.tabs-header .tab.active {
+  border-bottom: 2px solid #27ae60;
+  color: #27ae60;
+}
+
+.tab-content {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+/* Modal qr backdrop blur */
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.modal-content img {
+  margin: 1rem 0;
+  width: 200px;
+  height: 200px;
+}
+
+.modal-content .close-btn {
+  position: absolute;
+  top: 20px; right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.thumbnail img {
+  width: 80px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Modal Image Reuse backdrop blur */
+#imageModal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 500px;
+  max-height: 100%;
+}
+
+.image-modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.image-modal-content .close-btn {
+  position: absolute;
+  top: 10px; right: 10px;
+  font-size: 2rem;
+  color:white;
+  cursor: pointer;
+}
+
+.product-right input{
+  border:1px solid rgb(94, 126, 158);
+  outline:none;
+  size:14px;
+  padding-left:8px;
+  height:33px;
+  border-radius:2px;
+}
+
+.modal-overlay.show {
+  display: flex; 
+}
+.review {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-left: 4px solid #d0cdcd;
+}
+
+.stars {
+  color: #f39c12;
+  font-size: 18px;
+}
+
+
+/* Responsive breakpoint */
+@media screen and (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thumbnail img {
+    width: 70px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}

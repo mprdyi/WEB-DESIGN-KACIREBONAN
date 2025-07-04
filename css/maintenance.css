@@ -1,0 +1,95 @@
+.main-tenance{
+    padding-top:120px;
+    padding-bottom:60px;
+   }
+   .main-tenance a{
+    color:white;
+    align-items: center;
+   }
+    .container-maintenance{
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      padding: 50px 30px;
+      position: relative;
+      display:flex;
+      flex-direction:column;
+      margin:auto;
+    }
+
+    .emoji {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin: 10px 0;
+      color: #333;
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 2rem;
+      color: #0a58ca;
+    }
+
+    p {
+      color: #666;
+      margin: 15px 0 30px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      background: #0a58ca;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 30px;
+      cursor: pointer;
+     
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
+      width:180px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #084298;
+    }
+
+    .budaya-option.active {
+      background-color: #007bff;
+      color: white;
+      border-radius: 20px;
+      padding: 6px 14px;
+      transition: 0.3s;
+    }
+    
+    .budaya-option.active .budaya-icon {
+      background-color: white;
+      color: #007bff;
+    }
+    
+    .btn-jelajahi.active {
+      background-color: white;
+      color: #007bff;
+      border: 2px solid #007bff;
+    }
+    
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+ 

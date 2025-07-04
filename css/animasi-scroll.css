@@ -1,0 +1,25 @@
+.reveal {
+    opacity: 0;
+    transition: all 1.2s ease;
+  }
+
+  .from-left {
+    transform: translateX(-100px);
+  }
+
+  .from-right {
+    transform: translateX(100px);
+    overflow:hidden;
+  }
+
+  .from-bottom{
+    transform: translateY(100px);
+  }
+  .from-top {
+    transform: translateY(-100px);
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
