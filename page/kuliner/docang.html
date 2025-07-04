@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacirebonan</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/animasi-scroll.css">
+  
+</head>
+<style>
+
+  #nav{
+    position:relative;
+  }
+/* Container utama resep */
+#resep-tahu-gejrot {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Flex wrapper khusus layout */
+#resep-tahu-gejrot .flex-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* agar responsif */
+}
+
+.resep-content {
+  flex: 1 1 55%;
+}
+
+.resep-komentar {
+  flex: 1 1 30%;
+  background: #fdf5e6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.resep-komentar h3{
+  margin-top: 0;
+}
+
+/* Style list resep TETAP ADA */
+#resep-tahu-gejrot ul,
+#resep-tahu-gejrot ol {
+  margin-left: 20px;
+}
+
+#resep-tahu-gejrot li {
+  margin-bottom: 8px;
+}
+
+#resep-tahu-gejrot h1 {
+  font-family: 'Brush Script MT', cursive;
+  margin-bottom: 20px;
+  color: #5C3A00;
+  font-size: 2.5rem;
+}
+.warna-tahu{
+  color: #5C3A00;
+}
+
+#resep-tahu-gejrot h3 {
+  margin-top: 30px;
+  font-size: 1.3em;
+  color: #7A4E00;
+  border-bottom: 2px solid #e2b97f;
+  padding-bottom: 5px;
+}
+
+#resep-tahu-gejrot p {
+  margin-top: 15px;
+  background: #fdf5e6;
+  padding: 15px;
+  border-left: 4px solid #e2b97f;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.review-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border:none;
+  margin-bottom: 10px;
+}
+
+.review-form button {
+  padding: 10px 20px;
+  background: #7A4E00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  #resep-tahu-gejrot .flex-wrapper {
+    flex-direction: column;
+  }
+
+  .resep-content,
+  .resep-komentar {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+</style>
+<body>
+  <div id="main-content">
+    <section id="nav">
+        <div class="container-navbar">
+          <div class="navbar-kiri">
+            <ul>
+              <li class="dropdown-parent">
+                <a href="#">Budaya </a>
+                <ul class="dropdown-menu">
+                  <li><a href="../budaya/tari-topeng.html">Tari Topeng</a></li>
+                  <li><a href="../budaya/sintren.html">Sintren</a></li>
+                  <li><a href="../budaya/wayang-cepak.html">Wayang Cepak</a></li>
+                  <li><a href="../budaya/panjang-jimat.html">Panjang Jimat</a></li>
+                  <li><a href="../budaya/muludan.html">Muludan</a></li>
+                  <li><a href="../budaya/batik.html">Batik Cirebon</a></li>
+                  <li><a href="../budaya/gamelan.html">Gamelan</a></li>
+                  <li><a href="../budaya/aksara-cirebon.html">Bahasa dan Aksara</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-parent">
+                <a href="#">Ikonik</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../ikonik/goa-sunyaragi.html">Goa Sunyaragi</a></li>
+                  <li><a href="../ikonik/alun-alun-kejaksan.html">Alun Alun Kejaksan</a></li>
+                  <li><a href="../ikonik/masjid-sang-cipta-rasa.html">Masjid Sang Cipta Rasa</a></li>
+                  <li><a href="../ikonik/makam-sunan-gunung-jati.html">Makam Sunan Gunung Jati</a></li>
+                  <li><a href="../ikonik/kampung-batik-trusmi.html">Kampung Batik Trusmi</a></li>
+                  <li><a href="../ikonik/klenteng-talang.html">Kelenteng Talang</a></li>
+                  <li><a href="../ikonik/bima-stadion.html">Bima Stadion</a></li>
+                  <li><a href="../ikonik/pasar-kanoman.html">Pasar Kanoman</a></li>
+                  <li><a href="../ikonik/grage-mall.html">Grage Mall</a></li>
+                  <li><a href="../ikonik/csb-mall.html">CSB Mall</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-parent">
+                <a href="#">Keraton</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../keraton/kacirebonan.html">Keraton Kacirebonan</a></li>
+                  <li><a href="../keraton/kanoman.html">Keraton Kanoman</a></li>
+                  <li><a href="../keraton/kasepuhan.html">Keraton Kasepuhan</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-parent">
+                <a href="#" class="navbar-active">Kuliner</a>
+                <ul class="dropdown-menu">
+                  <li><a href="nasi-jamblang.html">Nasi Jamblang</a></li>
+                  <li><a href="empal-gentong.html">Empal Gentong</a></li>
+                  <li><a href="tahu-gejrot.html">Tahu Gejrot</a></li>
+                  <li  class="navbar-active"><a href="docang.html">Docang</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-brand">
+            <h4 class="teks-tebal"><a href="../../index.html" style="color:white">KACIREBONAN</a></h4>
+          </div>
+          <div class="hamburger" id="hamburger">☰</div>
+          <div class="navbar-kanan">
+            <ul>
+              <li class="dropdown-parent">
+                <a href="#">Wisata</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../wisata/pantai-kejawanan.html">Pantai Kejawanan</a></li>
+                  <li><a href="../wisata/bukit-gronggong.html">Bukit Gronggong</a></li>
+                  <li><a href="../wisata/kampung-sabin.html">Kampung Sabin</a></li>
+                  <li><a href="../wisata/setu-patok.html">Waduk Setu Patok</a></li>
+                  <li><a href="#">Lainnya</a></li>
+                </ul>
+              </li>
+              <li><a href="../../galeri.html">Galeri</a></li>
+              <li><a href="../../contact.html">Kontak</a></li>
+              <li><a href="../../tentang.html">Tentang</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <br><br><br><br>
+<section id="main-content">
+  <div class="about-container">
+    <div class="about-image  reveal from-left">
+      <img src="../../image/makanan/docang2.png" alt="Tahu Gejrot Khas Cirebon">
+    </div>
+    <div class="about-content">
+      <br><br>
+      <h3 class=" reveal from-left">DETAIL</h3>
+      <h1 class=" reveal from-top warna-tahu">Docang</h1>
+      <p class=" reveal from-right">
+        Docang adalah makanan khas Cirebon yang sudah mulai langka. Makanan ini terdiri dari lontong yang dipotong kecil, 
+        tauge rebus, daun singkong, dan parutan kelapa. Yang membuatnya khas adalah kuah oncom hangat yang gurih dan sedikit 
+        pedas, lalu ditaburi kerupuk.
+      </p>
+      <p> <a href="#resep-tahu-gejrot" class="about-button  reveal from-bottom">Lihat Resep</a></p>
+    </div>
+  </div>
+</section>
+<section id="resep-tahu-gejrot">
+  <div class="flex-wrapper">
+    <!-- Kolom Kiri: Resep -->
+    <div class="resep-content reveal from-bottom">
+      <h1>Resep Docang Khas Cirebon</h1>
+
+      <h3>Bahan Utama:</h3>
+      <ul>
+        <li>2 buah lontong, potong-potong</li>
+        <li>100 gram tauge, seduh air panas</li>
+        <li>100 gram daun singkong rebus, iris kasar</li>
+        <li>50 gram kelapa parut, kukus</li>
+      </ul>
+      
+      <h3>Bumbu Kuah Oncom:</h3>
+      <ul>
+        <li>150 gram oncom</li>
+        <li>3 siung bawang putih</li>
+        <li>5 siung bawang merah</li>
+        <li>2 butir kemiri, sangrai</li>
+        <li>1 ruas kencur</li>
+        <li>1 batang serai, memarkan</li>
+        <li>1 lembar daun salam</li>
+        <li>1 liter air</li>
+        <li>Garam dan gula merah secukupnya</li>
+        <li>Minyak untuk menumis</li>
+      </ul>
+      
+      <h3>Cara Membuat:</h3>
+      <ol>
+        <li><strong>Haluskan Bumbu:</strong> Haluskan bawang merah, bawang putih, kemiri, dan kencur.</li>
+        <li><strong>Tumis Bumbu:</strong> Tumis bumbu halus bersama serai dan daun salam hingga harum.</li>
+        <li><strong>Masak Kuah:</strong> Tambahkan oncom, aduk rata, tuangkan air. Bumbui dengan garam dan gula merah. Masak hingga kuah mendidih dan oncom larut sebagian.</li>
+        <li><strong>Sajikan:</strong> Tata lontong, tauge, dan daun singkong di mangkuk. Siram kuah oncom panas. Taburi kelapa parut kukus sebagai topping.</li>
+      </ol>
+      
+      <h3>Tips:</h3>
+      <p>
+        Docang paling nikmat disajikan hangat saat pagi hari. Gunakan oncom segar agar kuah lebih gurih beraroma khas!
+      </p>
+      
+    </div>
+
+    <!-- Kolom Kanan: Komentar -->
+    <div class="resep-komentar reveal from-bottom">
+      <h3>Ulasan & Komentar</h3>
+      <div class="review-list" id="reviewList">
+        <!-- Komentar akan muncul di sini -->
+      </div>
+      <div class="review-list">
+        <div class="review-item">
+          <strong>Anonymous:</strong>
+          <p>Enak banget! Resepnya mantap, mirip aslinya!</p>
+        </div>
+        <!-- Tambah review lainnya di sini -->
+      </div>
+
+      <div class="review-form">
+        <h3>Tulis Komentar</h3>
+        <form id="commentForm">
+          <textarea id="commentInput" placeholder="Tulis komentarmu di sini..." rows="4" required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer" style="background:black; padding-top:30px;">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>KACIREBONAN</h3>
+      <p>Eksplorasi warisan budaya Cirebon dalam satu tampilan digital yang modern.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="../../index.html">Beranda</a></li>
+        <li><a href="../../index.html">Keraton</a></li>
+        <li><a href="../../index.html">Kuliner</a></li>
+        <li><a href="../../index.html">Ikonik</a></li>
+        <li><a href="../../galeri.html">Galeri</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Kontak</h4>
+      <p>Email: info@kacirebonan.id</p>
+      <p>Instagram: @kacirebonan</p>
+      <p>Alamat: Cirebon, Jawa Barat</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kacirebonan. Dibuat dengan Hati untuk budaya Cirebon.</p>
+  </div>
+</footer>
+</div>
+<script>
+
+    // ===============================
+  // Hamburger toggle
+  // ===============================
+  const hamburger = document.getElementById("hamburger");
+  const kiri = document.querySelector(".navbar-kiri");
+  const kanan = document.querySelector(".navbar-kanan");
+
+  if (hamburger && kiri && kanan) {
+    hamburger.addEventListener("click", () => {
+      kiri.classList.toggle("show");
+      kanan.classList.toggle("show");
+    });
+  }
+
+  // ===============================
+  // Scroll animasi 
+  // ===============================
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  const elements = document.querySelectorAll('.reveal'); 
+  if (elements.length > 0) {
+    elements.forEach(el => observer.observe(el));
+  }
+  </script>
+
+<script>
+  const commentForm = document.getElementById('commentForm');
+  const commentInput = document.getElementById('commentInput');
+  const reviewList = document.getElementById('reviewList');
+
+  commentForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // Biar gak reload
+
+    const commentText = commentInput.value.trim();
+    if(commentText === '') return;
+
+    const newComment = document.createElement('div');
+    newComment.classList.add('review-item');
+    newComment.innerHTML = `
+      <strong>Anonymous:</strong>
+      <p>${commentText}</p>
+    `;
+
+    // Tambah ke atas atau bawah
+    reviewList.prepend(newComment);
+
+    // Bersihkan input
+    commentInput.value = '';
+  });
+</script>
+
+</body>
+</html>
