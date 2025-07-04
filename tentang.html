@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacirebonan</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animasi-scroll.css">
+  
+</head>
+<style>
+  .about-hero {
+    content: "";
+    background: url('image/kjwn-malam.png') center/cover no-repeat;
+    overflow:hidden;
+    z-index:1;
+    position: relative;
+    padding:170px 100px 70px 100px;
+
+  }
+  .about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transform: scale(1.05);
+
+}
+
+.about-hero * {
+  position: relative;
+  z-index: 3;
+}
+  #nav{
+    position:relative;
+  }
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;   
+    
+  }
+
+  .about-text {
+    flex: 1 1 400px;
+    padding: 20px;
+  }
+
+  .about-text h2 {
+    color: #005daa;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-image {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Kolom komentar */
+  .comment-section {
+    background: #f1f1f1;
+    padding: 30px 20px;
+  }
+
+  .comment-section h3 {
+    margin-bottom: 10px;
+  }
+
+  .comment-box {
+    margin-bottom: 15px;
+  }
+
+  .comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  .comment-list {
+    margin-top: 20px;
+  }
+
+  .comment-item {
+    background: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #005daa;
+  }
+  button{
+      background:dodgerblue;
+      color:white;
+      border-radius:5px;
+      padding:10px 5px 10px 5px;
+      border:none;
+      cursor:pointer;
+      width:90px;
+  }
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+    }
+  }
+</style>
+<body>
+  <div id="main-content">
+    <section id="nav">
+      <div class="container-navbar">
+        <div class="navbar-kiri">
+          <ul>
+            <li class="dropdown-parent">
+              <a href="#">Budaya </a>
+              <ul class="dropdown-menu">
+                <li><a href="page/budaya/tari-topeng.html">Tari Topeng</a></li>
+                <li><a href="page/budaya/sintren.html">Sintren</a></li>
+                <li><a href="page/budaya/wayang-cepak.html">Wayang Cepak</a></li>
+                <li><a href="page/budaya/panjang-jimat.html">Panjang Jimat</a></li>
+                <li><a href="page/budaya/muludan.html">Muludan</a></li>
+                <li><a href="page/budaya/batik.html">Batik Cirebon</a></li>
+                <li><a href="page/budaya/gamelan.html">Gamelan</a></li>
+                <li><a href="page/budaya/aksara-cirebon.html">Bahasa dan Aksara</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-parent">
+              <a href="#">Ikonik</a>
+              <ul class="dropdown-menu">
+                <li><a href="page/ikonik/goa-sunyaragi.html">Goa Sunyaragi</a></li>
+                <li><a href="page/ikonik/alun-alun-kejaksan.html">Alun Alun Kejaksan</a></li>
+                <li><a href="page/ikonik/masjid-sang-cipta-rasa.html">Masjid Sang Cipta Rasa</a></li>
+                <li><a href="page/ikonik/makam-sunan-gunung-jati.html">Makam Sunan Gunung Jati</a></li>
+                <li><a href="page/ikonik/kampung-batik-trusmi.html">Kampung Batik Trusmi</a></li>
+                <li><a href="page/ikonik/klenteng-talang.html">Kelenteng Talang</a></li>
+                <li><a href="page/ikonik/bima-stadion.html">Bima Stadion</a></li>
+                <li><a href="page/ikonik/pasar-kanoman.html">Pasar Kanoman</a></li>
+                <li><a href="page/ikonik/grage-mall.html">Grage Mall</a></li>
+                <li><a href="page/ikonik/csb-mall.html">CSB Mall</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-parent">
+              <a href="#">Keraton</a>
+              <ul class="dropdown-menu">
+                <li><a href="page/keraton/kacirebonan.html">Keraton Kacirebonan</a></li>
+                <li><a href="page/keraton/kanoman.html">Keraton Kanoman</a></li>
+                <li><a href="page/keraton/kasepuhan.html">Keraton Kasepuhan</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-parent">
+              <a href="#">Kuliner</a>
+              <ul class="dropdown-menu">
+                <li><a href="page/kuliner/nasi-jamblang.html">Nasi Jamblang</a></li>
+                <li><a href="page/kuliner/empal-gentong.html">Empal Gentong</a></li>
+                <li><a href="page/kuliner/tahu-gejrot.html">Tahu Gejrot</a></li>
+                <li><a href="page/kuliner/docang.html">Docang</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-brand">
+          <h4 class="teks-tebal"><a href="index.html" style="color:white">KACIREBONAN</a></h4>
+        </div>
+        <div class="hamburger" id="hamburger">☰</div>
+        <div class="navbar-kanan">
+          <ul>
+            <li class="dropdown-parent">
+              <a href="#">Wisata</a>
+              <ul class="dropdown-menu">
+                <li><a href="page/wisata/pantai-kejawanan.html">Pantai Kejawanan</a></li>
+                <li><a href="page/wisata/bukit-gronggong.html">Bukit Gronggong</a></li>
+                <li><a href="page/wisata/kampung-sabin.html">Kampung Sabin</a></li>
+                <li><a href="page/wisata/setu-patok.html">Waduk Setu Patok</a></li>
+                <li><a href="#">Lainnya</a></li>
+              </ul>
+            </li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+            <li class="navbar-active"><a href="tentang.html">Tentang</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<section id="contact">
+  <div class="about-hero">
+      <div class="hero-content text-center">
+        <h1 class=" reveal from-bottom">About Us</h1>
+        <p  class=" reveal from-bottom">Kacirebonan Web showcases Cirebon’s cultural richness in the digital space. From traditions, history, to local cuisine, it’s presented in a modern and accessible design. This platform serves as an interactive hub for anyone interested in exploring, appreciating, or preserving the unique heritage of Cirebon.</p>
+      </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="about-text">
+      <h2  class=" reveal from-bottom">Tentang Web Kacirebonan</h2>
+      <p  class=" reveal from-bottom">
+        Web Kacirebonan hadir untuk memperkenalkan kekayaan budaya Cirebon ke dunia digital.
+        Dari tradisi, sejarah, hingga kuliner lokal, semua dibalut dalam tampilan yang modern dan mudah diakses.
+        Diharapkan platform ini menjadi ruang interaktif bagi siapa pun yang ingin mengenal atau melestarikan budaya Cirebon.
+      </p>
+    </div>
+    <div class="about-image reveal from-bottom">
+      <img src="image/budaya.png" alt="Ilustrasi Budaya Cirebon">
+    </div>
+  </section>
+  <section class="comment-section reveal from-bottom">
+    <h3>Tinggalkan Komentar</h3>
+    <div class="comment-box">
+      <textarea id="commentInput" rows="4" placeholder="Tulis komentarmu..."></textarea>
+      <br><br>
+      <button onclick="addComment()">Kirim</button>
+    </div>
+    <div class="comment-list" id="commentList">
+      <!-- Komentar akan muncul di sini -->
+    </div>
+  </section>
+<footer class="footer" style="background:black; padding-top:30px">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>KACIREBONAN</h3>
+      <p>Eksplorasi warisan budaya Cirebon dalam satu tampilan digital yang modern.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#jelajahi">Keraton</a></li>
+        <li><a href="#kuliner-khas">Kuliner</a></li>
+        <li><a href="#ikonik">Ikonik</a></li>
+        <li><a href="#">Galeri</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Kontak</h4>
+      <p>Email: info@kacirebonan.id</p>
+      <p>Instagram: @kacirebonan</p>
+      <p>Alamat: Cirebon, Jawa Barat</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kacirebonan. Dibuat dengan Hati untuk budaya Cirebon.</p>
+  </div>
+</footer>
+</div>
+<script>
+  //===============================
+  // komentar
+  // ===============================
+    function addComment() {
+      const input = document.getElementById('commentInput');
+      const comment = input.value.trim();
+      if (comment) {
+        const commentList = document.getElementById('commentList');
+        const newComment = document.createElement('div');
+        newComment.className = 'comment-item';
+        newComment.textContent = comment;
+        commentList.prepend(newComment);
+        input.value = '';
+      }
+    }
+
+  // ===============================
+  // Hamburger toggle
+  // ===============================
+  const hamburger = document.getElementById("hamburger");
+  const kiri = document.querySelector(".navbar-kiri");
+  const kanan = document.querySelector(".navbar-kanan");
+
+  if (hamburger && kiri && kanan) {
+    hamburger.addEventListener("click", () => {
+      kiri.classList.toggle("show");
+      kanan.classList.toggle("show");
+    });
+  }
+
+  // ===============================
+  // Scroll animasi 
+  // ===============================
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  const elements = document.querySelectorAll('.reveal'); 
+  if (elements.length > 0) {
+    elements.forEach(el => observer.observe(el));
+  }
+  </script>
+</body>
+</html>
