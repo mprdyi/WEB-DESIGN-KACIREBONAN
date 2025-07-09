@@ -1460,7 +1460,8 @@ input:focus {
    /* welcome */
 .welcome{
   display:block;
-  padding:10px;
+  padding-left:10px;
+   padding-right:10px;
   //background:red;
   margin:auto;
  
@@ -1472,7 +1473,8 @@ input:focus {
   background:white;
   margin:auto;
   box-sizing:flex-box;
-  padding:0px;
+  padding-left:0px;
+  padding-right:0px;
   background:#F0F1F3;
   border-radius:15px;
 }
