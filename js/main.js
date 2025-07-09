@@ -58,7 +58,7 @@ btnKiri.addEventListener('click', () => {
 // play YT
 // ===============================
 document.getElementById("youtube-thumbnail").addEventListener("click", function () {
-  this.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/bc1aoan-IFY?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+  this.innerHTML = '<iframe width="95%" height="315" src="https://www.youtube.com/embed/bc1aoan-IFY?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 });
 
 // ===============================
