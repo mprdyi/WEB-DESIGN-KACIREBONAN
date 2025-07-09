@@ -1509,10 +1509,12 @@ input:focus {
 }
 .form-message, .location{
   width:100%;
-}
-.location {
   padding-left:20px;
   padding-right:20px;
+}
+.location {
+  padding-left:25px;
+  padding-right:25px;
 }
 .gmaps{
   width:100%;
